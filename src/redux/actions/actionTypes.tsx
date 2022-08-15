@@ -1,0 +1,10 @@
+// Константы для типа события
+
+export const ADD_NEW_FIGURE = 'ADD_NEW_FIGURE';
+export const GET_ACTIVE_FIGURE = 'GET_ACTIVE_FIGURE';
+export const RESET_ACTIVE_FIGURE = 'RESET_ACTIVE_FIGURE';
+export const SAVE_POSITION = 'SAVE_POSITION';
+export const GET_NEW_COLOR_TO_ACTIVE_FIGURE = 'GET_NEW_COLOR_TO_ACTIVE_FIGURE';
+export const KEY_LISTENER_DELETE = 'KEY_LISTENER_DELETE';
+export const UNDO_EVENT = 'UNDO_EVENT';
+export const REDO_EVENT = 'REDO_EVENT';

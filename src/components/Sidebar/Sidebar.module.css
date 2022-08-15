@@ -1,0 +1,13 @@
+:root {
+  --button-background-color: #eaeaea;
+  --button-border-color: #818181;
+  --button-hover-background-color: #dedede;
+  --button-hover-border-color: #777;
+}
+
+.sidebar {
+  width: 300px;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 50px 35px;
+}

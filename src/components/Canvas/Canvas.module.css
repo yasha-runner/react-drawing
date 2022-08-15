@@ -1,0 +1,58 @@
+.canvas {
+  flex-grow: 1;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas::before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100vh;
+  background-color: rgba(204, 204, 204, 0.5);
+  left: calc(50% - 0.5px);
+}
+
+.canvas::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100vw;
+  height: 1px;
+  background-color: rgba(204, 204, 204, 0.5);
+  top: calc(50% - 0.5px);
+}
+
+.canvas_mid {
+  display: block;
+  width: 0;
+  height: 0;
+  position: relative;
+}
+
+svg {
+  box-sizing: content-box;
+  pointer-events: none;
+}
+
+.triangle {
+  position: absolute;
+}
+
+.rectangle {
+  position: absolute;
+}
+
+.ellipse {
+  position: absolute;
+}
+
+svg.active {
+  border: 3px dashed #2f80ed;
+  transform: translate(-3px, -3px);
+}

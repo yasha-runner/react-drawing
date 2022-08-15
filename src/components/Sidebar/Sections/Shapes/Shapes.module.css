@@ -1,0 +1,58 @@
+.rectangle {
+  width: 80px;
+  height: 40px;
+  border: 3px solid var(--button-border-color);
+  background-color: var(--button-background-color);
+  cursor: pointer;
+  margin: 3px;
+}
+
+.rectangle:hover {
+  background-color: var(--button-hover-background-color);
+  border-color: var(--button-hover-border-color);
+}
+
+.ellipse {
+  clip-path: ellipse(closest-side farthest-side);
+  width: 80px;
+  height: 40px;
+  border: 3px solid var(--button-border-color);
+  border-radius: 50%;
+  background-color: var(--button-background-color);
+  cursor: pointer;
+  margin: 3px;
+}
+
+.ellipse:hover {
+  background-color: var(--button-hover-background-color);
+  border-color: var(--button-hover-border-color);
+}
+
+.triangle {
+  position: relative;
+  cursor: pointer;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 49px solid var(--button-border-color);
+  margin: 3px;
+}
+
+.triangle::after {
+  display: block;
+  content: '';
+  position: absolute;
+
+  top: 5px;
+  left: -34px;
+  border-left: 34px solid transparent;
+  border-right: 34px solid transparent;
+  border-bottom: 41px solid var(--button-background-color);
+}
+
+.triangle:hover {
+  border-bottom-color: var(--button-hover-border-color);
+}
+
+.triangle:hover::after {
+  border-bottom-color: var(--button-hover-background-color);
+}
